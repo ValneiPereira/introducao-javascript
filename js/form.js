@@ -49,6 +49,7 @@ function obterPacienteFormulario(form) {
     return paciente;
 }
 
+
 function montaTr(paciente) {
     var pacienteTr = document.createElement("tr");
     pacienteTr.classList.add("paciente");
