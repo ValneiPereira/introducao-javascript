@@ -10,9 +10,7 @@ tabela.addEventListener("dblclick", function(event){
     },500);
 });
 
-/* pacientes.forEach(function (paciente) {
-    paciente.addEventListener("dblclick", function () {
-        console.log("Fui clicado");
-        this.remove();
-    });
-}); */
+
+
+
+

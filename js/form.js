@@ -15,12 +15,12 @@ botaoAdicionar.addEventListener("click", function (event) {
 
     adicionaPacienteNaTabela(paciente);
     form.reset();
-    var mensagensErro= document.querySelector("#mensagens-erro");
-    mensagensErro.innerHTML="";
+    var mensagensErro = document.querySelector("#mensagens-erro");
+    mensagensErro.innerHTML = "";
 
 });
 
-function adicionaPacienteNaTabela(paciente){
+function adicionaPacienteNaTabela(paciente) {
     var pacienteTr = montaTr(paciente);
     var tabela = document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTr);
@@ -30,7 +30,7 @@ function adicionaPacienteNaTabela(paciente){
 
 function exibeMensagensErro(erros) {
     var ul = document.querySelector("#mensagens-erro");
-    ul.innerHTML="";
+    ul.innerHTML = "";
     erros.forEach(function (erro) {
         var li = document.createElement("li");
         li.textContent = erro;
@@ -105,4 +105,3 @@ function validaPaciente(paciente) {
 
     return erros;
 }
-
